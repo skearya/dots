@@ -1,0 +1,41 @@
+#!/bin/sh
+
+# Better fix than on https://github.com/janleigh/dotfiles/pull/26 lol
+
+# Author Notes:
+# Change this to something above 0 if you have Spotify Premium.
+HAS_SPOTIFY_PREMIUM=1
+# Change this to something above 0 if you want to show player position on the music player.
+SHOW_POSITION=1
+
+print_position() {
+	POSITION=$(playerctl position | sed 's/..\{6\}$//')
+	DURATION=$(playerctl metadata mpris:length | sed 's/.\{6\}$//')
+	
+	printf "%0d:%02d" $((POSITION%3600/60)) $((POSITION%60))
+	printf " / "
+	printf "%0d:%02d" $((DURATION%3600/60)) $((DURATION%60))
+}
+
+if ps -C spotify > /dev/null; then
+	PLAYER="spotify"
+fi
+
+if [ $SHOW_POSITION -gt 0 ]; then
+	case $PLAYER in
+		spotify)
+			if [ $HAS_SPOTIFY_PREMIUM -gt 0 ]; then
+				print_position
+			fi
+			;;
+		*)
+			# Check if mpris:length is not null.
+			# If its not null, then we can print the song position of the player.
+			if [ $(playerctl metadata mpris:length | wc -c) -gt 0 ]; then
+				print_position
+			else
+				echo "--:-- / --:-- "
+			fi
+			;;
+	esac
+fi

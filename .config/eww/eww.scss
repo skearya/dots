@@ -1,0 +1,21 @@
+@import "src/scss/variables";
+@import "src/scss/overrides";
+
+@import "src/scss/bar/index.scss";
+@import "src/scss/bar/widgets/calendar";
+@import "src/scss/bar/widgets/launcher";
+@import "src/scss/bar/widgets/browser";
+@import "src/scss/bar/widgets/terminal";
+@import "src/scss/bar/widgets/chat";
+@import "src/scss/bar/widgets/rofi";
+@import "src/scss/bar/widgets/powermenu";
+@import "src/scss/bar/widgets/systray";
+@import "src/scss/bar/widgets/time";
+@import "src/scss/bar/widgets/workspaces";
+@import "src/scss/bar/widgets/vpn";
+
+@import "src/scss/lock/index.scss";
+
+@import "src/scss/widgets/layouts";
+
+@import "src/scss/config";
