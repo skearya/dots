@@ -1,0 +1,96 @@
+configuration {
+	font:							"Iosevka Nerd Font 13";
+    show-icons:                     true;
+	icon-theme: 					"Papirus";
+    display-drun: 					"";
+    drun-display-format:            "{name}";
+    disable-history:                false;
+    fullscreen:                     false;
+	hide-scrollbar: 				true;
+	sidebar-mode: 					false;
+}
+@theme "/dev/null"
+
+* {
+	bg:				#141b1e;
+	fg:				#dadada;
+	button:				#232a2d;
+
+	background-color:		@bg;
+	text-color:			@fg;
+}
+
+window {
+location:   center;
+anchor:   center;
+height:    50%;
+width:   30%;
+orientation:   horizontal;
+children:   [mainbox];
+x-offset:   0px;        
+y-offset:   0px;
+border-radius:			12px;
+}
+
+prompt { enabled: false; }
+
+entry {
+	placeholder:			"  Search...";
+	placeholder-color:              @fg;
+	expand:                         true;
+	padding:                        1.5%;
+	border-radius:			12px;
+}
+
+inputbar {
+	children: 			[ prompt, entry ];
+	background-image:               url("/home/bradley/.config/rofi/reimu.png");
+	expand:                         false;
+	border-radius:                  0px 0 80px 0px;
+	padding:                        62px 120px 62px 120px;
+}
+
+listview {
+	columns:                        2;
+	lines:	                        5;
+	cycle:                          false;
+	dynamic:                        true;
+	layout:                         vertical;
+	padding:			30px 30px 0px 30px;
+}
+
+mainbox { children: [ inputbar, listview ]; }
+
+element {
+    background-color:               @al;
+    text-color:                     @fg;
+    orientation:                    horizontal;
+    border-radius:                  0px;
+    padding:                        6px;
+}
+
+element-icon {
+    background-color:  @bg;
+    text-color: inherit;
+
+    size:                           35px;
+    border:                         4px;
+}
+
+element-text {
+    background-color:  inherit;
+    text-color: inherit;
+
+    expand:                         true;
+    horizontal-align:               0;
+    vertical-align:                 0.5;
+    margin:                         0px 2.5px 0px 2.5px;
+}
+
+element selected {
+    background-color:               @bg;
+    text-color:                     #8ccf7e;
+	border:							0% 0% 0% 0%;
+    border-radius:                  10px;
+    border-color:                  	@bg;
+}
