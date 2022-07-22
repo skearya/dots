@@ -1,6 +1,7 @@
 # dots
 these are quite messy
 
+![alt text](screenshot.png)
 
 Credits:
 polybar based on siduck's bar (https://github.com/siduck/dotfiles)
