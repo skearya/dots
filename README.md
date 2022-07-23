@@ -1,16 +1,16 @@
-# dots
-these are quite messy
+# 📖 Dots
+![Screenshot](imgs/screenshot.png)
 
-![alt text](screenshot.png)
+**Window Manager**: [bspwm](https://github.com/baskerville/bspwm)\
+**Wallpaper**: [Link](wallpaper.png)
 
-Credits:
+***
+🔭 *Credits*
+---
+**Color Scheme**: [Everblush](https://github.com/Everblush)\
+**Polybar Inspiration**: [Siduck's Bar](https://github.com/siduck/dotfiles)\
+**Rofi Inspiration**: [Joni84's Rofi Themes](https://github.com/joni84/rofi)\
+**eww Dashboard**: [AlphaTechnolog's Dash](https://github.com/AlphaTechnolog/eww-dotfiles)\
+**eww Spotify Time**: [Janleigh's Dots](https://github.com/janleigh/dotfiles)
 
-colorscheme is everblush (https://github.com/Everblush)
-
-polybar based on siduck's bar (https://github.com/siduck/dotfiles)
-
-eww dashboard from alphatechnolog (https://github.com/AlphaTechnolog/eww-dotfiles)
-
-eww spotify time from janleigh (https://github.com/janleigh/dotfiles)
-
-rofi based on (https://github.com/joni84/rofi)
+***
