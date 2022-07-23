@@ -87,8 +87,8 @@ format-foreground = ${xrdb:color2}
 type = custom/text 
 content =" " 
 content-padding =1
-click-left = /home/bradley/.config/eww/scripts/openSysTray.sh
-click-right = /home/bradley/.config/eww/scripts/tray.sh
+click-left = ~/.config/eww/scripts/openSysTray.sh
+click-right = ~/.config/eww/scripts/tray.sh
 content-foreground = #dadada
 content-background = ${colors.background}
 #/home/bradley/.config/eww/controls/toggle.sh
