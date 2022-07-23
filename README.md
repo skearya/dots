@@ -1,4 +1,4 @@
-# 📖 skeary's dots!
+# 📖 skeary's dots! <3
 ![Screenshot](imgs/screenshot.png)
 ## 📌  *Info*
 - **OS:** [Endeavour](https://endeavouros.com/)
