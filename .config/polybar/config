@@ -60,7 +60,7 @@ border-bottom-color = ${colors.background}
 line-size = 2
 wm-restack = bspwm
 
-#dot2 round-left polywins round-right player  dot2 spot
+#disabled modules dot2 round-left polywins round-right player dot2
 
 modules-left = archlogo round-left bspwm round-right xbacklight alsa dash
 modules-center = xwindow
@@ -91,7 +91,7 @@ click-left = ~/.config/eww/scripts/openSysTray.sh
 click-right = ~/.config/eww/scripts/tray.sh
 content-foreground = #dadada
 content-background = ${colors.background}
-#/home/bradley/.config/eww/controls/toggle.sh
+
 
 [module/archlogo]
 type = custom/text 
@@ -100,13 +100,6 @@ content-padding =1
 ##click-left = idk
 content-foreground = #dadada
 
-[module/spot]
-type = custom/text 
-content =" " 
-content-padding =1
-click-left = /home/bradley/.config/eww/controls/toggle.sh
-content-foreground =  #A3BE8C
-#/home/bradley/.config/eww/controls/toggle.sh
 
 [module/dot]
 type = custom/text
