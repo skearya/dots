@@ -17,3 +17,5 @@
 - **eww Dashboard**: [AlphaTechnolog's Dash](https://github.com/AlphaTechnolog/eww-dotfiles)
 - **eww Spotify Time**: [Janleigh's Dots](https://github.com/janleigh/dotfiles)
 
+***
+if anyone would like help setting anything up feel free to open a issue or dm me at skeary#5383! :D
