@@ -44,7 +44,7 @@ entry {
 
 inputbar {
 	children: 			[ prompt, entry ];
-	background-image:               url("/home/bradley/.config/rofi/reimu.png");
+	background-image:               url("~/.config/rofi/reimu.png");
 	expand:                         false;
 	border-radius:                  0px 0 80px 0px;
 	padding:                        62px 120px 62px 120px;
