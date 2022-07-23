@@ -1,6 +1,0 @@
-(defwindow layout
-    :geometry (geometry :x "90%"
-                        :y "2%"
-                        :height "30px"
-                        :width "90px")
-(layout))
