@@ -1,0 +1,53 @@
+$radius: 10px;
+
+.powermenu {
+  background-color: $darkbg;
+  font-family: Iosevka Nerd Font;
+  font-size: 55px;
+  & button {
+    transition: all ease .2s;
+    padding: 30px 12px 30px 0px;
+    background-color: $bg;
+    &:hover { background-color: $contrastbg; }
+    &:active { background-color: $bgSecondary; }
+  }
+  .toolbar {
+    font-size: 14px;
+    font-family: Product Sans;
+    background-color: $bg;
+    padding: 10px;
+    .hint {
+      color: $lightblack;
+    }
+    .close {
+      font-family: Iosevka Nerd Font;
+      padding: 0px 8px 0px 3px;
+      margin: 0px 12px;
+      color: $red;
+      border-radius: 10px;
+    }
+  }
+  .tip {
+    padding: 10px 0px;
+    background-color: $darkbg;
+    font-size: 14px;
+    .icon {
+      color: $yellow;
+      font-family: Iosevka Nerd Font;
+      font-size: 16px;
+      margin-right: 7px;
+    }
+    .label {
+      color: $fg;
+      font-family: Product Sans;
+    }
+  }
+}
+
+.powermenu-close {
+  background-color: black;
+}
+
+.poweroff { color: $red; font-size: 50px; }
+.reboot { color: $magenta; font-size: 60px; }
+.logout { color: $yellow; font-size: 50px; }

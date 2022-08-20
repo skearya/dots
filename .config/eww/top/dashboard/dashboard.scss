@@ -1,0 +1,294 @@
+$radius: 10px;
+
+.dashboard {
+  background-color: $darkbg;
+  color: $fg;
+  border-radius: $radius;
+  font-family: Product Sans;
+  font-size: 14px;
+  .container {
+    padding: 10px;
+    background-color: $bg;
+    border-radius: 0px;
+  }
+}
+
+.user-info-box {
+  padding: 10px;
+  background-color: $darkbg;
+  .info {
+    .pfp {
+      min-width: 20px;
+      min-height: 12px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 100px;
+      margin-right: 10px;
+    }
+    .username {
+      font-weight: bold;
+      font-size: 15px;
+    }
+  }
+  .buttons {
+    font-family: Iosevka Nerd Font;
+    .close {
+      transition: all ease .2s;
+      color: $red;
+      padding: 0px 8px 0px 3px;
+      border-radius: 10px;
+      &:hover { background-color: $contrastbg; }
+      &:active { background-color: $bg; }
+    }
+  }
+}
+
+.date-box {
+  background-color: $contrastbg;
+  padding: 0px;
+  border-radius: $radius;
+  .weicon {
+	margin: 0 0 0 -145;
+    margin-top: 20px;
+	font-size: 80px;
+	color: $yellow;
+  }
+  .wereport {
+    font-weight: bold;
+	margin: -93 0 0 70;
+    font-size: 27px;
+  }
+  .wetemp {
+    color: $green;
+    margin-top: 0px;
+    font-size: 33px;
+  }
+  .wehumid {
+    margin-top: 10px;
+    font-size: 15px;
+    color: $blue;
+
+  }
+}
+
+.calendar-box {
+  background-color: $contrastbg;
+  border-radius: $radius;
+  .cal-box {
+    background-color: transparent;
+  }
+}
+
+.services-box {
+  margin-top: 10px;
+  .widget {
+    transition: all ease .2s;
+    &.deactivated {
+      background-color: $contrastbg;
+      color: $fg;
+      &:hover { background-color: $bgSecondary; }
+      &:active { background-color: $contrastbg; }
+    }
+    &.activated {
+      background-color: $blue;
+      color: $bg;
+    }
+    border-radius: $radius;
+    padding: 30px 0px;
+    .icon {
+      font-family: Iosevka Nerd Font;
+      font-size: 25px;
+      padding: 0px 13px 0px 2px;
+    }
+    .controlssss {
+      background-color: $contrastbg;
+      border-radius: $radius;
+      font-family: Iosevka Nerd Font;
+      font-size: 20px;
+      margin: 0px 0px 0px 10px;
+      padding: 9px 20px;
+    }
+    .blueicon {
+      font-family: Iosevka Nerd Font;
+      font-size: 30px;
+      padding: 3px 0px 0px 2px;
+    }
+    .blue-info {
+      font-family: Product Sans;
+      font-size: 18px;
+      padding-top: 4px;
+    }
+    .content {
+      font-family: Product Sans;
+      font-size: 18px;
+      padding-top: 4px;
+
+    }
+  }
+}
+
+.music {
+  background-color: $bg;
+  color: $fg;
+  font-family: Product Sans;
+  font-size: 14px;
+  margin-top: 10px;
+  .picture {
+    min-width: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: $radius;
+    padding: 15px 20px;
+    .music-name {
+      font-weight: bold;
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+    .music-artist {
+      font-size: 16px;
+    }
+  }
+  .controls {
+    background-color: $contrastbg;
+    border-radius: $radius;
+    font-family: Iosevka Nerd Font;
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+    padding: 9px 20px;
+    .pause {
+      padding: 5px 7px 4px 2px;
+      font-size: 16px;
+    }
+  }
+}
+
+.controls-box {
+  margin-top: 10px;
+  .system-control {
+    background-color: $contrastbg;
+    border-radius: $radius;
+    padding: 10px 15px;
+    .label {
+      font-size: 16px;
+      padding: 3px 0px 6px 0px;
+    }
+    .sliders-box {
+      .vol-slider {
+        margin-bottom: 4.5px;
+        .vol-label {
+          font-size: 20px;
+          font-family: Iosevka Nerd Font;
+          margin-right: 15px;
+          color: $cyan;
+        }
+        & scale trough {
+          all: unset;
+          border-radius: 10px;
+          background-color: $black;
+          border: solid $bgSecondary 5px;
+          min-height: 7px;
+          min-width: 185px;
+          & highlight {
+            all: unset;
+            background-color: $cyan;
+            color: #000000;
+            border-radius: 10px;
+          }
+        }
+      }
+      .br-slider {
+        margin-left: -1.5px;
+        .br-label {
+          font-size: 20px;
+          font-family: Iosevka Nerd Font;
+          margin-right: 15px;
+          color: $yellow;
+        }
+        & scale trough {
+          all: unset;
+          border-radius: 10px;
+          background-color: $black;
+          border: solid $bgSecondary 5px;
+          min-height: 7px;
+          min-width: 185px;
+          & highlight {
+            all: unset;
+            background-color: $yellow;
+            color: #000000;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+  .system-stats {
+    background-color: $contrastbg;
+    border-radius: $radius;
+    padding: 10px 15px;
+    .label {
+      font-size: 16px;
+      padding: 3px 0px 6px 0px;
+    }
+    .sliders-box {
+      .cpu-slider {
+        .cpu-label {
+          font-size: 20px;
+          font-family: Iosevka Nerd Font;
+          margin-right: 15px;
+          color: $red;
+        }
+        & scale trough {
+          all: unset;
+          border-radius: 10px;
+          background-color: $black;
+          border: solid $bgSecondary 5px;
+          min-height: 7px;
+          min-width: 185px;
+          & highlight {
+            all: unset;
+            background-color: $red;
+            color: #000000;
+            border-radius: 10px;
+          }
+        }
+      }
+      .ram-slider {
+        .ram-label {
+          font-size: 25px;
+          font-family: Iosevka Nerd Font;
+          margin-right: 11px;
+          color: $magenta;
+        }
+        & scale trough {
+          all: unset;
+          border-radius: 10px;
+          background-color: $black;
+          border: solid $bgSecondary 5px;
+          min-height: 7px;
+          min-width: 185px;
+          & highlight {
+            all: unset;
+            background-color: $magenta;
+            color: #000000;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $darkbg;
+  padding: 10px;
+  color: $fg;
+  .hint {
+    .icon {
+      font-family: Iosevka Nerd Font;
+      color: $yellow;
+      font-size: 18px;
+      margin-right: 8px;
+    }
+  }
+}

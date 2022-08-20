@@ -1,0 +1,4 @@
+(include "bottom/store/bar.yuck")
+(include "bottom/store/calendar.yuck")
+(include "bottom/store/dashboard.yuck")
+(include "bottom/store/music.yuck")

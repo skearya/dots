@@ -1,0 +1,9 @@
+(defwidget powermenu-dispatcher []
+  (button :class "powermenu-dispatcher"
+          :orientation "h"
+          :space-evenly false
+          :tooltip "Press to open powermenu"
+          :onclick "backend/main.sh powermenu.toggler"
+    "⏻"
+  )
+)

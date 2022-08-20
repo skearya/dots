@@ -1,0 +1,8 @@
+;; store
+(include "bottom/store/main.yuck")
+
+;; components
+(include "bottom/bar/bar.yuck")
+(include "bottom/powermenu/powermenu.yuck")
+(include "bottom/calendar/calendar.yuck")
+(include "bottom/dashboard/dashboard.yuck")

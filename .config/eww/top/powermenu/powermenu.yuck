@@ -1,0 +1,72 @@
+(defwidget powermenu []
+  (box :class "powermenu"
+       :space-evenly false
+       :orientation "v"
+    (box :class "toolbar"
+         :orientation "h"
+         :space-evenly true
+         :hexpand true
+         :valign "start"
+      (label :text "What do you want to do ${username}?"
+             :class "hint")
+      (button :class "close"
+              :tooltip "Close powermenu"
+              :halign "end"
+              :onclick "backend/main.sh powermenu.toggler"
+        ""
+      )
+    )
+    (box :space-evenly true
+         :orientation "h"
+         :valign "center"
+      (button :class "poweroff"
+              :tooltip "Poweroff"
+              :onclick "backend/main.sh powermenu.manager shutdown"
+        "⏻"
+      )
+      (button :class "reboot"
+              :tooltip "Reboot"
+              :onclick "backend/main.sh powermenu.manager reboot"
+        "勒"
+      )
+      (button :class "logout"
+              :tooltip "Logout"
+              :onclick "backend/main.sh powermenu.manager logout"
+        ""
+      )
+    )
+    (box :class "tip"
+         :orientation "h"
+         :space-evenly false
+         :halign "center"
+         :valign "end"
+      (label :text "" :class "icon" :halign "center")
+      (label :text "You can press any place of the screen to close this popup" :class "label" :halign "center")
+    )
+  )
+)
+
+(defwidget powermenu-close []
+  (button :class "powermenu-close"
+          :onclick "backend/main.sh powermenu.toggler"
+    ""
+  )
+)
+
+(defwindow powermenu
+  :geometry (geometry :x "0"
+                      :y "0"
+                      :width "480px"
+                      :height "120px"
+                      :anchor "center")
+  :wm-ignore true
+(powermenu))
+
+(defwindow powermenu-close
+  :geometry (geometry :x "0"
+                      :y "0"
+                      :width "100%"
+                      :height "100%"
+                      :anchor "center")
+  :wm-ignore true
+(powermenu-close))

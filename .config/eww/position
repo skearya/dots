@@ -1,0 +1,115 @@
+#!/usr/bin/env bash
+
+CONF_FILE=$HOME/.cache/eww/position
+CONF_FOLDER=$(dirname $CONF_FILE)
+
+if ! test -d $CONF_FOLDER; then
+  mkdir -p $CONF_FOLDER
+fi
+
+if ! test -f $CONF_FILE; then
+  echo top > $CONF_FILE
+fi
+
+# loading bspwm helpers
+. ~/.config/bspwm/conf
+. ~/.config/bspwm/scripts/helpers.sh
+
+# change pwd to eww config, just to avoid problems
+cd $HOME/.config/eww
+
+# show help
+help () {
+  echo "usage: $(basename $0) <top|bottom>"
+}
+
+# reset bspwm paddings, eww should set it automatically using `:reserve`
+reset_paddings () {
+  bspc config top_padding 0
+  bspc config bottom_padding 0
+}
+
+# removes eww.yuck and eww.scss
+clean_files () {
+  rm ./eww.{yuck,scss}
+}
+
+# make symlinks to the specified folders
+mksymlinks () {
+  local folder=$1
+  # should do something like: `ln -s ~/.config/eww/top/eww.yuck ./eww.yuck`
+  # and the same to the bottom and the scss file
+  for file in eww.yuck eww.scss; do
+    ln -s $PWD/$folder/$file $PWD/$file
+  done
+}
+
+# get the position from `CONF_FILE`
+get_position () {
+  cat $CONF_FILE
+}
+
+# refresh bspwm state
+refresh_bspwm () {
+  eww kill
+  eww daemon
+  launch_bar # from bspwm helpers
+  # plank:
+  local position=$(get_position)
+  if [[ $position == "top" ]]; then
+    launch_plank # from bspwm helpers
+  else
+    pkill plank # just kill it
+  fi
+}
+
+# update position state in cache file
+update_cache_file () {
+  echo $1 > $CONF_FILE
+}
+
+# change position to top
+top () {
+  reset_paddings
+  clean_files
+  mksymlinks top
+  update_cache_file top
+  refresh_bspwm
+  echo "Done"
+}
+
+# change position to bottom
+bottom () {
+  reset_paddings
+  clean_files
+  mksymlinks bottom
+  update_cache_file bottom
+  refresh_bspwm
+  echo "Done"
+}
+
+# toggle between `top` and `bottom`
+toggle () {
+  local position=$(get_position)
+  if [[ $position == "top" ]]; then
+    bottom
+  else
+    top
+  fi
+}
+
+# -- arguments parsing -- #
+if [[ $1 == "" ]]; then
+  help
+  exit 1
+fi
+
+if [[ $1 == "top" ]]; then
+  top
+elif [[ $1 == "bottom" ]]; then
+  bottom
+elif [[ $1 == "get-position" ]]; then
+  get_position
+elif [[ $1 == "toggle" ]]; then
+  toggle
+fi

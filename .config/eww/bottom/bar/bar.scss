@@ -1,0 +1,172 @@
+// bar
+.bar {
+  background-color: $bg;
+  color: $fg;
+  padding: 8px 10px;
+  font-family: Product Sans;
+  font-size: 16px;
+}
+
+// launcher widget
+.launcher {
+  font-family: Iosevka Nerd Font;
+  border-radius: 10px;
+  padding: 0px 12px 0px 9px;
+  color: $green;
+  font-size: 18px;
+  &:hover {
+    background-color: $contrastbg;
+  }
+  &:active {
+    background-color: $bgSecondary;
+    color: $fg;
+  }
+}
+
+// simple date
+.date {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+// workspaces
+.works {
+  font-size: 11px;
+  margin-top: 1px;
+  margin-left: 10px;
+  font-family: Iosevka Nerd Font;
+  font-size: 13px;
+
+  // void
+  .0f {
+    color: $black;
+    background-color: $contrastbg;
+    padding: 8px 10px;
+  }
+
+  // occupied
+  .01f, .02f, .03f, .04f, .05f, .06f {
+    color: $blue;
+    background-color: $contrastbg;
+    padding: 8px 10px;
+  }
+  
+  // focused
+  .01f1, .02f2, .03f3, .04f4, .05f5, .06f6,
+  .0f1, .0f2, .0f3, .0f4, .0f5, .0f6 {
+    color: $yellow;
+    background-color: $contrastbg;
+    padding: 8px 10px;
+  }
+
+  // first workspace, just for rounded borders
+  .first {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-left: 15px;
+  }
+
+  // last workspace, just for rounded borders
+  .last {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-right: 18px;
+  }
+}
+
+// position toggler
+.position-toggler {
+  padding: 0 12px;
+  font-family: Iosevka Nerd Font;
+  color: $yellow;
+  margin-left: 5px;
+  border-radius: 10px;
+  transition: all ease .2s;
+  &:hover { background-color: $contrastbg; }
+  &:active { background-color: $bgSecondary; }
+}
+
+// music dispatcher styles
+.music-dispatcher {
+  padding: 0 15px 0px 10px;
+  border-radius: 10px;
+  margin-left: 7px;
+  margin-right: -3px;
+  color: $green;
+  transition: all ease .2s;
+  font-family: Iosevka Nerd Font;
+  &:hover { background-color: $contrastbg; }
+  &:active { background-color: $bgSecondary; }
+}
+
+// powermenu dispatcher
+.powermenu-dispatcher {
+  font-family: Iosevka Nerd Font;
+  border-radius: 10px;
+  padding: 0px 16px 0px 9px;
+  color: $red;
+  font-size: 18px;
+  &:hover {
+    background-color: $contrastbg;
+  }
+  &:active {
+    background-color: $bgSecondary;
+    color: $fg;
+  }
+}
+
+// syscontrols
+.syscontrol {
+  background-color: $contrastbg;
+  border-radius: 20px;
+  padding: 0px 15px 0 9px;
+  margin-right: 10px;
+  font-size: 14px;
+  font-family: Iosevka Nerd Font;
+  button {
+    padding: 0 14px 0 5px;
+    transition: all ease .2s;
+    &:hover {
+      color: $lightblack;
+    }
+  }
+  .network {
+    margin: 0 0px 0 10px;
+  }
+  .volume {
+    margin: 0 2px;
+    padding-left: 8px;
+  }
+}
+
+// updates
+.updates {
+  margin-right: 20px;
+  .icon {
+    margin-right: 14px;
+    font-family: Iosevka Nerd Font;
+    color: $green;
+  }
+  .content {
+    font-size: 14px;
+    margin-top: -2.5px;
+    font-family: Product Sans;
+  }
+}
+
+// dashboard dispatcher
+.dashboard-dispatcher {
+  font-family: Iosevka Nerd Font;
+  border-radius: 10px;
+  padding: 0px 16px 0px 14px;
+  margin-right: 10px;
+  color: $fg;
+  font-size: 18px;
+  &:hover {
+    background-color: $contrastbg;
+  }
+  &:active {
+    background-color: $bgSecondary;
+    color: $fg;
+  }
+}

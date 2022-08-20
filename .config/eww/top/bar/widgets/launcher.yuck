@@ -1,0 +1,8 @@
+(defwidget launcher []
+  (button :class "launcher"
+          :orientation "h"
+          :onclick "backend/main.sh misc.exec rofi -show drun"
+          :tooltip "Launch applications"
+    (label :text "異" :class "content")
+  )
+)

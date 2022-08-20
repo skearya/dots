@@ -1,0 +1,18 @@
+(defwidget syscontrol []
+  (box :class "syscontrol"
+       :orientation "h"
+       :space-evenly false
+    (button :class "network"
+            :orientation "h"
+            :tooltip "${network_name} (Press to open nmtui)"
+            :onclick "st -c network -e ~/.local/bin/lessborder nmtui"
+      network_icon
+    )
+    (button :class "volume"
+            :orientation "h"
+            :tooltip "Volume: ${volume_percentage} (Press to open pavucontrol)"
+            :onclick "pavucontrol"
+      volume_icon
+    )
+  )
+)

@@ -1,0 +1,74 @@
+(include "top/bar/widgets/launcher.yuck")
+(include "top/bar/widgets/date.yuck")
+(include "top/bar/widgets/workspaces.yuck")
+(include "top/bar/widgets/position.yuck")
+(include "top/bar/widgets/music-dispatcher.yuck")
+(include "top/bar/widgets/powermenu-dispatcher.yuck")
+(include "top/bar/widgets/syscontrol.yuck")
+(include "top/bar/widgets/updates.yuck")
+
+(defwidget left []
+  (box :class "left"
+       :halign "start"
+       :orientation "h"
+       :space-evenly false
+    (launcher)
+    (workspaces)
+    (music-dispatcher)
+    (position)
+  )
+)
+
+(defwidget center []
+  (box :class "center"
+       :halign "center"
+       :orientation "h"
+       :space-evenly false
+    (date)
+  )
+)
+(defwidget right []
+  (box :class "right"
+       :halign "end"
+       :orientation "h"
+       :space-evenly false
+    (updates)
+    (syscontrol)
+    (powermenu-dispatcher)
+  )
+)
+
+(defwidget bar []
+  (box :class "bar"
+       :orientation "h"
+       :space-evenly true
+    (left)
+    (center)
+    (right)
+  )
+)
+
+(defwindow bar
+  :monitor 0
+  :geometry (geometry :x "0px"
+                      :y "0px"
+                      :width "100%"
+                      :height "50px"
+                      :anchor "top center")
+  :reserve (struts :side "top" :distance "50px")
+  :type "dock"
+  :wm-ignore false
+(bar))
+
+; just for multimonitor support
+(defwindow bar2
+  :monitor 1
+  :geometry (geometry :x "0px"
+                      :y "0px"
+                      :width "100%"
+                      :height "50px"
+                      :anchor "top center")
+  :reserve (struts :side "top" :distance "50px")
+  :type "dock"
+  :wm-ignore false
+(bar))

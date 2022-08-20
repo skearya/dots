@@ -1,0 +1,43 @@
+.cal-box {
+  font-family: Product Sans;
+  background-color: $bg;
+  border-radius: 8px;
+  padding: 0 1rem .2rem;
+  color: $fg;
+
+  .cal {
+    background-color: inherit;
+    padding: .5rem .10rem 0rem;
+    margin-left: 10px;
+
+    & > * {
+      border: solid 0px transparent;
+    }
+    
+    &.highlight {
+      padding: 10rem;
+    }
+  }
+}
+
+calendar:selected {
+  color: $accent;
+}
+
+calendar.header {
+  color: $cyan;
+  font-weight: bold;
+}
+
+calendar.button {
+  color: $cyan;
+}
+
+calendar.highlight {
+  color: $green;
+  font-weight: bold;
+}
+
+calendar:indeterminate {
+  color: $fgDim;
+}

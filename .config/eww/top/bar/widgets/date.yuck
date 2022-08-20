@@ -1,0 +1,7 @@
+(defwidget date []
+  (button :class "date"
+          :onclick "eww open --toggle dashboard"
+          :tooltip "Press to open the dashboard"
+    "${date} ${ampm}"
+  )
+)

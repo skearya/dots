@@ -1,0 +1,8 @@
+(defwidget position []
+  (button :class "position-toggler"
+          :orientation "h"
+          :tooltip "Switch bar position to bottom"
+          :onclick "~/.config/eww/position toggle"
+    ""
+  )
+)

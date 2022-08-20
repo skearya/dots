@@ -1,0 +1,30 @@
+;; +-info-+
+(defpoll pfp :interval "120s" "backend/main.sh dashboard.pfp")
+(defpoll username :interval "120s" "backend/main.sh dashboard.user name")
+
+;; date widget
+(defpoll dashboard_date_day :interval "60s" "date '+%A, %B %d'")
+
+;; +-services-+ (and yes, i'm reutilizing the scripts that are in `bar` lol)
+
+;; -- network
+(defpoll dashboard_network_radio_status :interval "1s" "backend/main.sh bar.network radio-status")
+(defpoll dashboard_light_mode_status :interval "1s" "backend/main.sh dashboard.light_mode status")
+(defpoll dashboard_redshift_state :interval "1s" "backend/main.sh dashboard.redshift state")
+
+;; +-controls-+
+
+;; volume
+(defpoll vol :interval "1s" "backend/main.sh bar.volume vol")
+
+;; brightness
+(defpoll br_icon :interval "1s" "backend/main.sh dashboard.brightness icon")
+(defpoll br :interval "1s" "backend/main.sh dashboard.brightness br")
+
+;; +-stats-+
+
+;; cpu
+(defpoll cpu :interval "5s" "backend/main.sh dashboard.cpu")
+
+;; ram
+(defpoll ram :interval "5s" "backend/main.sh dashboard.ram ram")

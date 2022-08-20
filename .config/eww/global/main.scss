@@ -1,0 +1,11 @@
+* {
+  all: unset;
+}
+
+.hide {
+  background-color: transparent;
+  color: transparent;
+  font-size: 0px;
+  &:hover { background-color: transparent; }
+  &:active { background-color: transparent; }
+}

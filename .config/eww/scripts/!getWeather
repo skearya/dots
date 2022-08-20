@@ -1,0 +1,49 @@
+#!/bin/sh
+
+KEY="4f3dbfa8f33f2458cde8b4e3dec2ba98"
+CITY="30144"
+
+weather=$(curl --connect-timeout 4 -sf "api.openweathermap.org/data/2.5/weather?q=$CITY&appid=$KEY&units=metric")
+weather_desc=$(echo $weather | jq -r ".weather[0].main")
+weather_temp=$(echo $weather | jq ".main.temp" | cut -d "." -f 1)
+feels_like=$(echo $weather | jq ".main.feels_like" | cut -d "." -f 1)
+humidity=$(echo $weather | jq ".main.humidity")
+wind=$(echo $weather | jq ".wind.speed")
+
+check_if_empty() {
+	if [ -z "$1" ]; then
+		echo "-1"
+	else
+		echo "$1"
+	fi
+}
+
+check_if_empty_text() {
+	if [ -z "$1" ]; then
+		echo "Not Available."
+	else
+		echo "$1"
+	fi
+}
+
+case $1 in
+	current_temp)
+		check_if_empty $weather_temp
+		;;
+	current_temp_fahrenheit)
+		weather_temp=$((($weather_temp * 9 / 5) + 32))
+		check_if_empty $weather_temp
+		;;
+	feels_like)
+		check_if_empty $feels_like
+		;;
+	weather_desc)
+		check_if_empty_text $weather_desc
+		;;
+	humidity)
+		check_if_empty $humidity
+		;;
+	wind)
+		check_if_empty $wind
+		;;
+esac

@@ -1,0 +1,18 @@
+; workspaces
+(deflisten workspaces "backend/main.sh bar.workspaces")
+
+; music dispatcher
+(defpoll is_music_running :interval "1s" "backend/main.sh bar.music is_running")
+
+; misc
+(defpoll date :interval "60s" "backend/main.sh bar.date")
+(defpoll ampm :interval "60s" "date +%p")
+(defpoll updates :interval "120s" "backend/main.sh bar.updates")
+
+; network
+(defpoll network_icon :interval "1s" "backend/main.sh bar.network icon")
+(defpoll network_name :interval "1s" "backend/main.sh bar.network name")
+
+; volume
+(defpoll volume_icon :interval "1s" "backend/main.sh bar.volume icon")
+(defpoll volume_percentage :interval "1s" "backend/main.sh bar.volume percentage")

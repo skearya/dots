@@ -1,0 +1,5 @@
+(defpoll music_art_url :interval "3s" "backend/main.sh music.songart echo")
+(defpoll music_art_url_getter :interval "3s" "backend/main.sh music.songart get")
+(defpoll music_title :interval "3s" "backend/main.sh music.songdata title")
+(defpoll music_artist :interval "3s" "backend/main.sh music.songdata artist")
+(defpoll music_status :interval "3s" "backend/main.sh music.songdata status")

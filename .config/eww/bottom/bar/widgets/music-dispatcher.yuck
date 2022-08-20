@@ -1,0 +1,8 @@
+(defwidget music-dispatcher []
+  (button :class "${is_music_running == 'no' ? 'hide' : 'music-dispatcher'}"
+          :orientation "h"
+          :tooltip "Spotify is running! Enjoy :3"
+          :onclick "backend/main.sh bar.music get-spotify-info"
+    ""
+  )
+)

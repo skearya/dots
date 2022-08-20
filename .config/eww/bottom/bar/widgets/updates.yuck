@@ -1,0 +1,8 @@
+(defwidget updates []
+  (box :class "updates"
+       :space-evenly false
+       :orientation "h"
+    (label :text "" :class "icon")
+    (label :text updates :class "content")
+  )
+)

@@ -1,0 +1,25 @@
+        (button :class "redshift widget ${dashboard_redshift_state == 'on' ? 'activated' : 'deactivated'}"
+                :orientation "v"
+                :space-evenly false
+                :hexpand true
+                :onclick "backend/main.sh dashboard.redshift toggle"
+          (box :space-evenly false
+               :orientation "v"
+            (label :text "ﯦ" :class "icon")
+            (label :text "Blue Light" :class "content")
+          )
+        )
+
+
+  .controls {
+    background-color: $contrastbg;
+    border-radius: $radius;
+    font-family: Iosevka Nerd Font;
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+    padding: 9px 20px;
+    .pause {
+      padding: 5px 7px 4px 2px;
+      font-size: 16px;
+    }
+
