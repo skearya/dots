@@ -1,6 +1,6 @@
 # 📖 skeary's dots! <3
-![Screenshot](imgs/unknown1.png)
-![Screenshot](imgs/unknown.png)
+![Screenshot](unknown1.png)
+![Screenshot](unknown.png)
 ## 📌  *Info*
 - **OS:** [Endeavour](https://endeavouros.com/)
 - **Window Manager**: [bspwm](https://github.com/baskerville/bspwm)
