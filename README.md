@@ -2,7 +2,7 @@
 ![Screenshot](unknown1.png)
 ![Screenshot](unknown.png)
 ## 📌  *Info*
-Only tested on a 1920x1080 display, you may run into issues with eww if using another resolution.
+Only tested on a 1920x1080 display, you may run into issues with eww if using another resolution. You will have to use a openweathermap key in [weather.sh](https://github.com/skearya/dots/blob/v2/.config/eww/scripts/weather.sh ) for weather to work, more info commented in file.
 
 - **OS:** [Endeavour](https://endeavouros.com/)
 - **Window Manager**: [bspwm](https://github.com/baskerville/bspwm)
