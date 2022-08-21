@@ -1,0 +1,32 @@
+font:
+  normal:
+    family: "Operator Mono"
+    style: Medium
+
+  # Bold font face
+  bold:
+    family: "Operator Mono"
+    style: Bold
+
+  # Italic font face
+  italic:
+    family: "Operator Mono"
+    style: Medium Italic
+
+  # Bold italic font face
+  bold_italic:
+    family: "Operator Mono"
+    style: Bold Italic
+
+  # Point size
+  size: 8.5
+
+  # Offset
+  #offset:
+  #  x: 0
+  #  y: 0
+
+  # Glyph offset
+  #glyph_offset:
+  #  x: 0
+  #  y: 0

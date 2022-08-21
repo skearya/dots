@@ -1,0 +1,34 @@
+# config by Evan Koehler
+
+window:
+  # adds padding to the terminal (looks great with rounded corners)
+  padding:
+    x: 10
+    y: 10
+
+  # sets background opacity to 0.1 (10%)
+  opacity: 0.8
+
+font:
+  # I'm using JetBrains fonts, which I recommend, but feel free to edit it !
+  normal:
+    style: Medium
+    family: JetBrains Mono Nerd Font
+  # sets font size to 14px
+  size: 9.9
+
+colors:
+  # sets background color to light gray (#eee) and font color to white (#fff)
+  primary:
+    background: '#101313'
+    foreground: '#ffffff'
+
+#shell:
+  # sets my shell at startup (mine is fish but do not hesitate to put yours instead)
+#  program: /bin/fish
+#  args:
+#    - --login
+
+cursor:
+  style:
+    shape: Beam
