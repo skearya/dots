@@ -9,6 +9,7 @@ Only tested on a 1920x1080 display, you may run into issues with eww if using an
 - **Terminal:** [alacritty](https://github.com/alacritty/alacritty)
 - **Compositor:** [picom-jonaburg-git](https://github.com/jonaburg/picom)
 - **Application Launcher:** [rofi](https://github.com/davatorium/rofi)
+- **Dock:** [Plank](https://launchpad.net/plank)
 - **Colorscheme:** [Quixotic](https://github.com/QuixoticCS/)
 - **Wallpaper:** [Quixotic Wallpapers](https://github.com/QuixoticCS/quixotic-wallpaper)
 - **GTK:** [Awesthetic](https://github.com/saimoomedits/dotfiles/blob/main/extras/themes)
