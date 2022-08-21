@@ -17,11 +17,9 @@ Only tested on a 1920x1080 display, you may run into issues with eww if using an
 ***
 🔭 *Credits*
 ---
-- **Color Scheme**: [Everblush](https://github.com/Everblush)
 - **Polybar Inspiration**: [Siduck's Bar](https://github.com/siduck/dotfiles)
-- **Rofi Inspiration**: [Joni84's Rofi Themes](https://github.com/joni84/rofi)
-- **eww Dashboard**: [AlphaTechnolog's Dash](https://github.com/AlphaTechnolog/eww-dotfiles)
-- **eww Spotify Time**: [Janleigh's Dots](https://github.com/janleigh/dotfiles)
-
+- **Original Rofi Theme**: [Dharmx's Rofi](https://github.com/dharmx/dots.sh/tree/main/config/_ui/rofi)
+- **eww Dashboard Base**: [AlphaTechnolog](https://github.com/AlphaTechnolog/)
+- **Starship Config**: [syndrizzle's hotfiles](https://github.com/syndrizzle/hotfiles/tree/fvwm)
 ***
 if anyone would like help setting anything up feel free to open a issue or dm me at skeary#5383! :D
