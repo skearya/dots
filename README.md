@@ -1,7 +1,7 @@
-# 📖 skeary's dots! <3
+# dotfiles
 ![Screenshot](unknown1.png)
 ![Screenshot](unknown.png)
-## 📌  *Info*
+## Info
 Only tested on a 1920x1080 display, you may run into issues with eww if using another resolution. You will have to use a openweathermap key in [weather.sh](https://github.com/skearya/dots/blob/v2/.config/eww/scripts/weather.sh ) for weather to work, more info commented in file.
 
 - **OS:** [Endeavour](https://endeavouros.com/)
@@ -16,11 +16,11 @@ Only tested on a 1920x1080 display, you may run into issues with eww if using an
 - **Fonts:** JetBrains Mono Nerd Font, Material Design Icons, Product Sans
 - **Icon Theme:** [Quixotic-SEv2](https://github.com/QuixoticCS/quixotic-icons)
 ***
-🔭 *Credits*
+*Credits*
 ---
 - **Polybar Inspiration**: [Siduck's Bar](https://github.com/siduck/dotfiles)
 - **Original Rofi Theme**: [Dharmx's Rofi](https://github.com/dharmx/dots.sh/tree/main/config/_ui/rofi)
 - **eww Dashboard Base**: [AlphaTechnolog](https://github.com/AlphaTechnolog/)
 - **Starship Config**: [syndrizzle's hotfiles](https://github.com/syndrizzle/hotfiles/tree/fvwm)
 ***
-if anyone would like help setting anything up feel free to open a issue or dm me at skeary#5383! :D
+
