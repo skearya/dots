@@ -1,3 +1,5 @@
+repo archived as i have stopped maining linux for a while, might return when asahi adds more drivers
+
 # dotfiles
 ![Screenshot](unknown1.png)
 ![Screenshot](unknown.png)
